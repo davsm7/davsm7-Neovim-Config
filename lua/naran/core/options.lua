@@ -39,6 +39,13 @@ local options = {
 	splitkeep = 'screen', --stablizie window open/close
 }
 
+-- Deshabilita netrw (el explorador por defecto de Neovim)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- Opcional: habilita termguicolors para mejor visualización
+vim.opt.termguicolors = true
+
 for k, v in pairs(options) do
 	vim.opt[k] = v
 end
