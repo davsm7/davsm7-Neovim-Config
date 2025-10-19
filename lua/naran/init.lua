@@ -3,6 +3,7 @@ vim.g.mapleader = " "
 require("naran.lazy")
 
 require("naran.core.options")
+require("naran.core.numbertoggle").setup()
 -- require("naran.core.keymaps")
 -- require("naran.core.autocmds")
 

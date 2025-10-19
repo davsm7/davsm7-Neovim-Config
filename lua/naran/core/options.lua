@@ -23,6 +23,8 @@ local options = {
 	cindent = true,
 	autoindent = false,
 	tabstop = 4, --visual width of tab
+    colorcolumn = "100",
+
 
 	foldmethod = "expr",
 	foldlevel = 99, --disable folding, lower #s enable
