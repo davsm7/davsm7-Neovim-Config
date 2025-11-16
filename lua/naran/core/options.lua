@@ -14,22 +14,21 @@ local options = {
 	ttyfast = true, --faster scrolling
 	smoothscroll = true,
 	title = true, --automatic window titlebar
-	
+
 	number = true, --numbering lines
 	relativenumber = true, --toggle bound to leader nn
 	numberwidth = 4,
 
 	smarttab = true, --indentation stuff
 	cindent = true,
-	autoindent = false,
+	autoindent = true,
 	tabstop = 4, --visual width of tab
-    colorcolumn = "100",
-
+	colorcolumn = "100",
 
 	foldmethod = "expr",
 	foldlevel = 99, --disable folding, lower #s enable
 	foldexpr = "nvim_treesitter#foldexpr()",
-	
+
 	termguicolors = true,
 
 	ignorecase = true, --ignore case while searching
@@ -38,7 +37,7 @@ local options = {
 	conceallevel = 2, --markdown conceal
 	concealcursor = "nc",
 
-	splitkeep = 'screen', --stablizie window open/close
+	splitkeep = "screen", --stablizie window open/close
 }
 
 -- Deshabilita netrw (el explorador por defecto de Neovim)
